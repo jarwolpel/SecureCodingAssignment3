@@ -15,6 +15,7 @@ def get_user_input():
 def send_email(to, subject, body):
     os.system(f'echo {body} | mail -s "{subject}" {to}')
 
+
 def get_data():
     url = 'http://insecure-api.com/get-data'
     data = urlopen(url).read().decode()
